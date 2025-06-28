@@ -61,6 +61,7 @@ color: #ededed;
 .home-content h1 {
     font-size: 56px;
     font-weight: 700;
+    line-height: 1.2;
 }
 
 .home-content h3 {
@@ -71,6 +72,7 @@ color: #ededed;
 
 .home-content p {
     font-size: 16px;
+    margin: 20px 0 40px;
 }
 
 .home-content .btn-box {
@@ -81,6 +83,7 @@ color: #ededed;
 }
 
 .btn-box a {
+    position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -94,9 +97,28 @@ color: #ededed;
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .btn-box a:nth-child(2) {
     background: transparent;
     color: #00abf0; 
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+
 }
