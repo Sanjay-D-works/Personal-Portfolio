@@ -312,3 +312,46 @@ span {
 .btn-box.btns a::before {
     background: var(--second-bg-color);
 }
+
+.sub-title {
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 70px;
+  padding-top: 30px;
+}
+
+.sub-title span {
+  color: #0fe;
+}
+
+.cls {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container1 {
+  width: 600px;
+  height: 500px;
+  padding: 75px 90px;
+  margin-left: 120px;
+}
+
+.heading1 {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 5px;
+  margin-bottom: 50px;
+}
+
+.bar {
+  font-size: 23px;
+}
+
+.Technical-bars .bar {
+  margin: 40px 0;
+}
+
+.Technical-bars .bar.first-child {
+  
+}
